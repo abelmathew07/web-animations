@@ -32,7 +32,7 @@
         #alice1,
         #alice2,
         #alice3 {
-            width: 100%; /* Ensure images take up the entire grid cell */
+            width: 100%; 
         }
     </style>
 </head>
@@ -74,13 +74,13 @@
                                 setTimeout(() => {
                                     alice3.animate(aliceTumbling, aliceTiming).finished
                                         .catch(error => console.error(`Error animating Alices: ${error}`));
-                                }, 500); // Adjust the delay between animations
+                                }, 500); 
                             })
                             .catch(error => console.error(`Error animating Alices: ${error}`));
-                    }, 500); // Adjust the delay between animations
+                    }, 500); 
                 })
                 .catch(error => console.error(`Error animating Alices: ${error}`));
-        }, 500); // Adjust the initial delay
+        }, 500); 
     </script>
 </body>
 
