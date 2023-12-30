@@ -16,7 +16,7 @@
             height: 100vh;
             box-sizing: border-box;
             overflow: hidden;
-            margin: 0; 
+            margin: 0;
         }
 
         #alice-container {
@@ -29,26 +29,28 @@
                 ". . a3";
         }
 
-        #alice1{
-        width: 33%; 
-            height: auto; 
+        #alice1 {
+            width: 33%;
+            height: auto;
             position: absolute;
             top: 0;
             left: 0;
         }
-        #alice2{
-        width: 27%; 
-            height: auto; 
+
+        #alice2 {
+            width: 27%;
+            height: auto;
             position: absolute;
-            top: 50;
-            left: 50;
+            top: 50px; /* Adjusted top value */
+            left: 50px; /* Adjusted left value */
         }
-        #alice3{
-        width: 21%; 
-            height: auto; 
+
+        #alice3 {
+            width: 21%;
+            height: auto;
             position: absolute;
-            top: 100;
-            left: 100;
+            top: 100px; /* Adjusted top value */
+            left: 100px; /* Adjusted left value */
         }
     </style>
 </head>
@@ -80,7 +82,6 @@
         const alice2 = document.querySelector("#alice2");
         const alice3 = document.querySelector("#alice3");
 
-       
         setTimeout(() => {
             alice1.animate(aliceTumbling, aliceTiming).finished
                 .then(() => {
@@ -90,13 +91,13 @@
                                 setTimeout(() => {
                                     alice3.animate(aliceTumbling, aliceTiming).finished
                                         .catch(error => console.error(`Error animating Alices: ${error}`));
-                                }, 500); 
+                                }, 500);
                             })
                             .catch(error => console.error(`Error animating Alices: ${error}`));
-                    }, 500); 
+                    }, 500);
                 })
                 .catch(error => console.error(`Error animating Alices: ${error}`));
-        }, 500); 
+        }, 500);
     </script>
 </body>
 
