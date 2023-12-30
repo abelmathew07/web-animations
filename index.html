@@ -7,7 +7,38 @@
     <meta name="viewport" content="width=device-width">
     <title>Sequencing animations</title>
     
-    <link href="style.css" rel="stylesheet">
+    <style>body {
+    background: rgb(242, 239, 242);
+    background-color: rgb(227, 107, 230);
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#alice-container {
+    width: 90vh;
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+        "a1 . ."
+        ". a2 ."
+        ". . a3";
+}
+
+#alice1 {
+    grid-area: a1;
+}
+
+#alice2 {
+    grid-area: a2;
+}
+
+#alice3 {
+    grid-area: a3;
+}</style>
 </head>
 
 <body>
